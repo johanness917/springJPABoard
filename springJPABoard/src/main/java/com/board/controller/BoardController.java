@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 public class BoardController {
 	@Autowired
 	private BoardService boardService;
-
+	
 	@GetMapping("/insertForm")
 	public String boardInsertForm(Model model) {
 		return "board/insertForm";
